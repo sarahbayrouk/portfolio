@@ -2,11 +2,11 @@ body {
   background: #070707;
   color: #ffff;
   text-align: center;
-  margin: 50px;
+  margin: 20px;
   padding: 0;
 }
 h1 {
-  line-height: 2;
+  line-height: 3;
   font-family: "Secular One";
   font-size: 25px;
   text-align: center;
@@ -31,7 +31,7 @@ p {
 }
 hr {
   border: none;
-  padding-bottom: 60px;
+  padding: 60px;
 }
 a:link, a:visited {
   color:#8B8483;
@@ -50,9 +50,9 @@ a:hover {
 }
 /*menu items shsould be spaced*/
 .menu {
-  padding: 60px;
-  grid-template-columns: repeat(3, auto);
-
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
 }
 
 /*----------------container for index page-----------------*/
@@ -121,11 +121,12 @@ a:hover {
 .grid {
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-gap: 20px;
   grid-auto-flow: dense;
+  justify-content: center;
 }
 .grid > div {
-  padding: 20px;
+  padding: 10px;
 }
 .grid img {
   max-width: 100%;
@@ -154,7 +155,7 @@ a:hover {
   grid-row: span 4;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
   .container {
     grid-template-columns: repeat(4, auto);
   }
@@ -163,8 +164,9 @@ a:hover {
   }
   .menu {
     grid-template-columns: repeat(1, auto);
-    padding-bottom: 30px;
-    padding-top: 30px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, auto);
   }
 }
 /*-----------------lightbox------------------------------*/
