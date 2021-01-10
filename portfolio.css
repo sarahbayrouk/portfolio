@@ -1,45 +1,44 @@
 body {
-  background:#070707;
-  color:#ffff;
+  background: #070707;
+  color: #ffff;
   text-align: center;
-  margin: 0;
+  margin: 50px;
   padding: 0;
 }
 h1 {
-  line-height: 1.6;
+  line-height: 2;
   font-family: "Secular One";
-  font-size: 2vw;
+  font-size: 25px;
+  text-align: center;
 }
 h2 {
   line-height: 1.6;
   font-family: "Secular One";
   text-align: justify;
-  font-size: 1.8vw;
+  font-size: 19px;
 }
 h3 {
   line-height: 1.6;
   font-family: "Secular One";
   text-align: justify;
-  font-size: 1.8vw;
+  font-size: 19px;
 }
 p {
   line-height: 1.6;
   font-family: "Asap";
   text-align: justify;
-  padding-right: 90px;
-  font-size: 1.3vw;
+  font-size: 16px;
 }
 hr {
-  padding: 25px;
   border: none;
+  padding-bottom: 60px;
 }
 a:link, a:visited {
   color:#8B8483;
   text-align: center;
   font-family: "Asap";
-  font-size: 1vw;
+  font-size: 13px;
   text-decoration: none;
-  padding: 25px;
 }
 /*hovering over a link*/
 a:hover {
@@ -49,44 +48,125 @@ a:hover {
 #current_page {
   color: #6EC7B1;
 }
+/*menu items shsould be spaced*/
+.menu {
+  padding: 60px;
+  grid-template-columns: repeat(3, auto);
 
-/*
-.grid{
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15 px;
-  grid-auto-rows: minmax(400px, auto);
 }
 
-.grid img{
-  max-width: 100%;
-}
-*/
-
+/*----------------container for index page-----------------*/
 .container{
-  width: 1300px;
-  margin: 20px auto;
-  columns: 4;
-  gap: 10px;
-  break-inside: avoid;
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: dense;
 }
-.container img{
-  max-width: 100%;
-  padding: 5px;
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: 1s;
 }
 .container img:hover {
-  filter: opacity(80%);
+  filter: opacity(70%);
+}
+.gallery-item .text {
+  opacity: 0;
+  position: absolute;
+  font-family: "Secular One";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 4;
+  transition: .5s ease-in-out;
+}
+.gallery-item:hover .text {
+  opacity: 1;
+  padding: 1em;
+  width: 100%;
 }
 
-@media (max-width: 1200px) {
+/*------------container for animation page------------*/
+.ani-container{
+  display:grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.ani-container img:hover {
+  filter: opacity(70%);
+}
+.ani-container iframe {
+  position: relative;
+  overflow: hidden;
+}
+.ani-container iframe:hover {
+  filter: opacity(70%);
+}
+
+/*--------------grid for contact page---------------------*/
+.grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  grid-auto-flow: dense;
+}
+.grid > div {
+  padding: 20px;
+}
+.grid img {
+  max-width: 100%;
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+.w-2 {
+  grid-column: span 2;
+}
+.w-3 {
+  grid-column: span 3;
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+.h-2 {
+  grid-row: span 2;
+}
+.h-3 {
+  grid-row: span 3;
+}
+.h-4 {
+  grid-row: span 4;
+}
+
+@media screen and (max-width:600px) {
   .container {
-    columns: 3;
-    width: calc(100% - 40px);
-    box-sizing: border-box;
-    padding: 20px 20px 20px 0;
+    grid-template-columns: repeat(4, auto);
+  }
+  .ani-container {
+    grid-template-columns: repeat(1, auto);
+  }
+  .menu {
+    grid-template-columns: repeat(1, auto);
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
-
 /*-----------------lightbox------------------------------*/
 
 body.lb-disable-scrolling {
@@ -245,6 +325,7 @@ body.lb-disable-scrolling {
 .lb-data {
   padding: 0 4px;
   color: #ccc;
+  font-family: "Asap";
 }
 
 .lb-data .lb-details {
