@@ -18,14 +18,7 @@ h2 {
   text-align: center;
   font-size: 35px;
 }
-/* NOTE: h3 is just to add spacing */
-h3 {
-  line-height: 2;
-  font-family: "Secular One";
-  text-align: center;
-  font-size: 5px;
-  color: black;
-}
+
 p {
   line-height: 1.5;
   font-family: "Asap";
@@ -71,23 +64,23 @@ a:hover {
 .container{
   display:grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 20px;
+  grid-gap: 25px;
   grid-auto-flow: dense;
   justify-content: center;
 }
 .gallery-item {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: center;
 }
 .gallery-item .image {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 .gallery-item .image img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
   object-position: 50% 50%;
   transition: 0.2s;
@@ -113,17 +106,15 @@ a:hover {
 }
 
 /*------------container for animation page------------*/
-.ani-container{
+.ani-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
+  grid-gap: 25px;
   grid-auto-flow: dense;
   margin: 25px;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
-.ani-container2{
+.ani-container2 {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -140,6 +131,8 @@ a:hover {
 .ani-container iframe {
   position: relative;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ani-container iframe:hover {
   filter: opacity(70%);
@@ -194,10 +187,10 @@ a:hover {
     grid-template-columns: repeat(1, auto);
   }
   .ani-container2 {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
   }
   .menu {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
   }
   .grid {
     grid-template-columns: repeat(1, auto);
