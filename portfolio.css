@@ -200,6 +200,9 @@ a:hover {
 
 @media screen and (max-width:500px) {
   .container {
+    grid-template-columns: repeat(6, auto);
+  }
+  .container2 {
     grid-template-columns: repeat(4, auto);
   }
   .ani-container {
