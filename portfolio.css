@@ -58,6 +58,8 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 150px);
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   display: block;
@@ -134,8 +136,8 @@ a:hover {
   grid-gap: 25px;
   grid-auto-flow: dense;
   margin: 25px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ani-container3 {
   display: block;
