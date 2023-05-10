@@ -56,10 +56,15 @@ a:hover {
 /*menu items shsould be spaced*/
 .menu {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(3, 150px);
   justify-content: center;
 }
-
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
 /*----------------container for index page-----------------*/
 .container{
   display:grid;
@@ -131,6 +136,12 @@ a:hover {
   margin: 25px;
   margin-left: 80px;
   margin-right: 80px;
+}
+.ani-container3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
 }
 .ani-container img:hover {
   filter: opacity(70%);
