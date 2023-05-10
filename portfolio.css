@@ -61,18 +61,16 @@ a:hover {
   width: 300px;
 }
 /*----------------container for index page-----------------*/
-.container{
+.container {
   display:grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 25px;
+  grid-gap: 20px;
   grid-auto-flow: dense;
-  justify-content: center;
+  grid-auto-rows: 60px;
 }
 .gallery-item {
   display: flex;
-  width: 100%;
-  height: 100%;
-  position: center;
+  align-items: center;
   justify-content: center;
 }
 .gallery-item .image {
@@ -111,20 +109,18 @@ a:hover {
 .ani-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 25px;
+  grid-gap: 20px;
   grid-auto-flow: dense;
   margin: 25px;
   justify-content: center;
 }
 .ani-container2 {
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
   margin: 25px;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .ani-container img:hover {
   filter: opacity(70%);
