@@ -63,7 +63,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 350px;
 }
 /*----------------container for index page-----------------*/
 .container{
@@ -152,6 +152,8 @@ a:hover {
 .ani-container iframe {
   position: relative;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 .ani-container iframe:hover {
   filter: opacity(70%);
