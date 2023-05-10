@@ -137,12 +137,6 @@ a:hover {
   margin: 25px;
   place-items: center;
 }
-.ani-container3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-}
 .ani-container img:hover {
   filter: opacity(70%);
 }
