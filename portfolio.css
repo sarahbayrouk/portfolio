@@ -58,7 +58,8 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 150px);
   justify-content: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   display: block;
@@ -124,10 +125,9 @@ a:hover {
 
 /*------------container for animation page------------*/
 .ani-container{
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 25px;
-  grid-auto-flow: dense;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ani-container2{
   display:grid;
@@ -152,8 +152,6 @@ a:hover {
 .ani-container iframe {
   position: relative;
   overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
 }
 .ani-container iframe:hover {
   filter: opacity(70%);
