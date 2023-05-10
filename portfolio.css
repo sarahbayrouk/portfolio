@@ -57,7 +57,7 @@ a:hover {
 .menu {
   display: grid;
   grid-template-columns: repeat(3, 150px);
-  place-items: center;
+  justify-content: center;
   margin: auto;
 }
 .logo {
