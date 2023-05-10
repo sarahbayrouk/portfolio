@@ -114,7 +114,12 @@ a:hover {
 
 /*------------container for animation page------------*/
 .ani-container{
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  margin: 25px;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,7 +129,7 @@ a:hover {
   grid-gap: 20px;
   grid-auto-flow: dense;
   margin: 25px;
-  place-items: center;
+  justify-content: center;
 }
 .ani-container img:hover {
   filter: opacity(70%);
@@ -188,7 +193,7 @@ a:hover {
   .ani-container {
     grid-template-columns: repeat(1, auto);
   }
-    .ani-container2 {
+  .ani-container2 {
     grid-template-columns: repeat(1, auto);
   }
   .menu {
