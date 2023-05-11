@@ -63,7 +63,7 @@ a:hover {
 /*----------------container for index page-----------------*/
 .container {
   display:grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
 }
@@ -107,6 +107,12 @@ a:hover {
 }
 
 /*------------container for animation page------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .ani-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -182,7 +188,7 @@ a:hover {
 
 @media screen and (max-width:500px) {
   .container {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
   }
   .ani-container {
     grid-template-columns: repeat(1, auto);
