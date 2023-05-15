@@ -124,7 +124,6 @@ a:hover {
   grid-auto-flow: dense;
   margin: 25px;
   justify-content: center;
-  width: 50%;
 }
 
 /*.ani-container img:hover {
@@ -191,7 +190,7 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
   .ani-container iframe {
-    width: 50%;
+    width: 100%;
   }
   .ani-container2 {
     grid-template-columns: repeat(2, auto);
